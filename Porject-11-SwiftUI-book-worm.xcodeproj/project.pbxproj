@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1B4B4D572D331CC80051853D /* Porject-11-SwiftUI-book-worm */ = {
+		1BD852A02D34709600C567F0 /* Porject-11-SwiftUI-book-worm */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Porject-11-SwiftUI-book-worm";
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 		1B4B4D4C2D331CC80051853D = {
 			isa = PBXGroup;
 			children = (
-				1B4B4D572D331CC80051853D /* Porject-11-SwiftUI-book-worm */,
+				1BD852A02D34709600C567F0 /* Porject-11-SwiftUI-book-worm */,
 				1B4B4D562D331CC80051853D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1B4B4D572D331CC80051853D /* Porject-11-SwiftUI-book-worm */,
+				1BD852A02D34709600C567F0 /* Porject-11-SwiftUI-book-worm */,
 			);
 			name = "Porject-11-SwiftUI-book-worm";
 			packageProductDependencies = (
