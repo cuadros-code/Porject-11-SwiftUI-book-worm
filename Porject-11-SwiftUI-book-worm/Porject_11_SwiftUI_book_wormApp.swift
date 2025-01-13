@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Porject_11_SwiftUI_book_wormApp: App {
@@ -13,5 +14,6 @@ struct Porject_11_SwiftUI_book_wormApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Student.self)
     }
 }
