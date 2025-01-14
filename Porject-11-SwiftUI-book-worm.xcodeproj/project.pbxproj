@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1BB1E3EA2D37008100720798 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1BB1E3E92D37008100720798 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1B4B4D552D331CC80051853D /* Porject-11-SwiftUI-book-worm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Porject-11-SwiftUI-book-worm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB1E3E92D37008100720798 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		1B4B4D4C2D331CC80051853D = {
 			isa = PBXGroup;
 			children = (
+				1BB1E3E92D37008100720798 /* README.md */,
 				1BD852A02D34709600C567F0 /* Porject-11-SwiftUI-book-worm */,
 				1B4B4D562D331CC80051853D /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB1E3EA2D37008100720798 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
