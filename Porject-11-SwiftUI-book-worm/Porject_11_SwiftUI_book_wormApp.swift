@@ -14,6 +14,6 @@ struct Porject_11_SwiftUI_book_wormApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Student.self)
+        .modelContainer(for: Book.self)
     }
 }
