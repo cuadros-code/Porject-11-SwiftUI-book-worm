@@ -10,6 +10,7 @@ import SwiftUI
 struct AddBookView: View {
     
     @Environment(\.modelContext) var modelContext
+    @Environment(\.dismiss) var dismiss
     
     @State private var title = ""
     @State private var author = ""
@@ -53,12 +54,21 @@ struct AddBookView: View {
                             rating: rating
                         )
                         modelContext.insert(newBook)
+                        dismiss()
                     }
                 }
                 
                 
             }
             .navigationTitle("Add Book")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                    .foregroundStyle(.red)
+                }
+            }
         }
     }
 }
