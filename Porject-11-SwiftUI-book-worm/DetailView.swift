@@ -13,38 +13,37 @@ struct DetailView: View {
     let book: Book
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                ZStack(alignment: .bottomTrailing) {
-                    Image(book.genre)
-                        .resizable()
-                        .scaledToFit()
-                    
-                    Text(book.genre.uppercased())
-                        .font(.caption)
-                        .fontWeight(.black)
-                        .padding(8)
-                        .foregroundStyle(.white)
-                        .background(.black.opacity(0.75))
-                        .clipShape(.capsule)
-                        .offset(x: -5, y: -5)
-                }
+        ScrollView {
+            ZStack(alignment: .bottomTrailing) {
+                Image(book.genre)
+                    .resizable()
+                    .scaledToFit()
                 
-                Text(book.author)
-                    .font(.title)
-                    .foregroundStyle(.secondary)
-                
-                Text(book.review)
-                    .padding()
-                
-                RatingView(rating: .constant(book.rating))
-                    .font(.largeTitle)
-                
+                Text(book.genre.uppercased())
+                    .font(.caption)
+                    .fontWeight(.black)
+                    .padding(8)
+                    .foregroundStyle(.white)
+                    .background(.black.opacity(0.75))
+                    .clipShape(.capsule)
+                    .offset(x: -5, y: -5)
             }
-            .navigationTitle(book.title)
-            .navigationBarTitleDisplayMode(.inline)
-            .scrollBounceBehavior(.basedOnSize)
+            
+            Text(book.author)
+                .font(.title)
+                .foregroundStyle(.secondary)
+            
+            Text(book.review)
+                .padding()
+            
+            RatingView(rating: .constant(book.rating))
+                .font(.largeTitle)
+            
         }
+        .navigationTitle(book.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .scrollBounceBehavior(.basedOnSize)
+        
     }
 }
 
