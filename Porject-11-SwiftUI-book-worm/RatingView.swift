@@ -24,6 +24,7 @@ struct RatingView: View {
         HStack {
             if label.isEmpty == false {
                 Text(label)
+                Spacer()
             }
             
             ForEach(1..<maximumRating + 1, id: \.self) { number in
