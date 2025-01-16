@@ -62,3 +62,8 @@ struct ContentView: View {
     }
 }
 ```
+
+- Sort Using Query
+```swift
+@Query(sort: \Book.rating, order: .forward) var books: [Book]
+```
