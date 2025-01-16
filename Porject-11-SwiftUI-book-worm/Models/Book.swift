@@ -16,6 +16,7 @@ class Book {
     var genre: String
     var review: String
     var rating: Int
+    var creationDate: Date = Date.now
 
     init(
         title: String,

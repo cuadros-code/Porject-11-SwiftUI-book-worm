@@ -11,10 +11,8 @@ import SwiftData
 struct ContentView: View {
     
     @Environment(\.modelContext) var modelContext
-//    @Query var books: [Book]
-//    @Query(sort: \Book.rating, order: .forward) var books: [Book]
     @Query(sort: [
-        SortDescriptor(\Book.title, order: .forward),
+        SortDescriptor(\Book.title, order: .reverse),
         SortDescriptor(\Book.author)
     ]) var books: [Book]
     
@@ -31,12 +29,24 @@ struct ContentView: View {
                             
                             VStack(alignment: .leading) {
                                 Text(book.title)
+                                    .foregroundStyle(
+                                        book.rating == 1 ? .red : .black
+                                    )
                                     .font(.headline)
                                 
                                 Text(book.author)
                                     .foregroundStyle(.secondary)
+                                Text(
+                                    book.creationDate,
+                                    format: .dateTime
+                                        .day()
+                                        .month()
+                                        .year()
+                                )
+                                    .font(.footnote)
                             }
                         }
+                        
                     }
                 }
                 .onDelete(perform: deleteBooks)
